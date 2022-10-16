@@ -1,0 +1,48 @@
+html,
+body {
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+  letter-spacing: $default-letter-spacing;
+  // background-color:
+  font-weight: 400;
+
+  & .on-popup {
+    overflow: hidden;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus,
+  button:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+}
+
+svg {
+  height: initial;
+  width: initial;
+}
+
+.clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
