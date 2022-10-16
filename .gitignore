@@ -6,6 +6,13 @@ stats.json
 .pnp
 .pnp.js
 
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.env.production
+
 # misc
 .DS_Store
 npm-debug.log*
@@ -21,3 +28,4 @@ generated-cra-app
 .cra-template-rb
 template
 .eslintcache
+
