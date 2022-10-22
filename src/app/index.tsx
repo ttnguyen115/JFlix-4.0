@@ -12,14 +12,14 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'assets/styles/libs.scss';
 import { GlobalStyle } from 'styles/global-styles';
 
-import { HelmetHeader, NotFoundPage } from './components';
+import { AppHeader, HelmetHeader, NotFoundPage } from './components';
 import { HomePage } from './pages/HomePage/Loadable';
 
 export function App() {
   return (
     <BrowserRouter>
-      <HelmetHeader content="Self-expense management app" />
-
+      <HelmetHeader content="JFlix 4.0" />
+      <AppHeader />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route component={NotFoundPage} />

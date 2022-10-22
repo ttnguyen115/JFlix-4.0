@@ -2,23 +2,10 @@
 
 exports[`<App /> should render and match the snapshot 1`] = `
 <BrowserRouter>
-  <Helmet
-    defaultTitle="React Boilerplate"
-    defer={true}
-    encodeSpecialCharacters={true}
-    htmlAttributes={
-      Object {
-        "lang": undefined,
-      }
-    }
-    prioritizeSeoTags={false}
-    titleTemplate="%s - React Boilerplate"
-  >
-    <meta
-      content="A React Boilerplate application"
-      name="description"
-    />
-  </Helmet>
+  <HelmetHeader
+    content="JFlix 4.0"
+  />
+  <AppHeader />
   <Switch>
     <Route
       component={[Function]}

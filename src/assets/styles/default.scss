@@ -4,7 +4,8 @@ body {
   font-size: $default-font-size;
   line-height: $default-line-height;
   letter-spacing: $default-letter-spacing;
-  // background-color:
+  background-color: $background-color;
+  color: $heading-color;
   font-weight: 400;
 
   & .on-popup {
@@ -34,9 +35,21 @@ h6,
   margin: 0;
 }
 
+a {
+  transition: 0.5s ease;
+}
+
 svg {
   height: initial;
   width: initial;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .clearfix {

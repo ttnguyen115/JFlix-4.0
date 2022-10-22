@@ -1,0 +1,75 @@
+@import '../../../assets/styles/libs.scss';
+
+.AppHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: $z-index-fixed;
+  background-color: $background-color;
+  transition: 0.5s, margin 0s;
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+  }
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.logo {
+  display: block;
+  margin-left: 35px;
+  height: auto;
+  width: 80px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  &-search {
+    margin-right: 30px;
+
+    svg {
+      width: 20px;
+      height: auto;
+      fill: $secondary-color;
+    }
+  }
+
+  &-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+      font-size: 14px;
+      color: $text-color;
+      font-weight: 500;
+      margin-right: 10px;
+      transition: 0.5s;
+    }
+
+    svg {
+      width: 20px;
+      fill: #2f80ed;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../../../assets/styles/libs.scss';
+
+.BurgerButton {
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  display: block;
+  left: 0;
+  top: 29px;
+
+  span {
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: 0.5s;
+    opacity: 1;
+
+    &:first-child {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 10px;
+      width: 16px;
+    }
+
+    &:last-child {
+      top: 20px;
+      width: 8px;
+    }
+  }
+
+  &.active span {
+    background-color: #2f80ed;
+
+    &:first-child {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:last-child {
+      width: 24px;
+      transform: rotate(-45deg);
+      top: 9px;
+    }
+  }
+}
