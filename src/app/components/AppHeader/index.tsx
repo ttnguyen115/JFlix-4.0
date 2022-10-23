@@ -27,7 +27,7 @@ export function AppHeader(props: AppHeaderProps) {
             <button type="button" className="actions-search">
               <SearchIcon />
             </button>
-            <Link to="/signup" className="actions-user">
+            <Link to="/signin" className="actions-user">
               <span>Sign in</span>
               <SignInIcon />
             </Link>
