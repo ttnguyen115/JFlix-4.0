@@ -7,23 +7,31 @@
  */
 
 import * as React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import 'assets/styles/libs.scss';
 import { GlobalStyle } from 'styles/global-styles';
 
-import { AppHeader, HelmetHeader, NotFoundPage } from './components';
 import { HomePage } from './pages/HomePage/Loadable';
+import { NotFoundPage } from './components/NotFoundPage/Loadable';
+import { useTranslation } from 'react-i18next';
 
 export function App() {
+  const { i18n } = useTranslation();
   return (
     <BrowserRouter>
-      <HelmetHeader content="JFlix 4.0" />
-      <AppHeader />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <Helmet
+        titleTemplate="%s - React Boilerplate"
+        defaultTitle="React Boilerplate"
+        htmlAttributes={{ lang: i18n.language }}
+      >
+        <meta name="description" content="A React Boilerplate application" />
+      </Helmet>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
       <GlobalStyle />
     </BrowserRouter>
   );
