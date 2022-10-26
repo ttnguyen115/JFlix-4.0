@@ -24,6 +24,7 @@ export function AppHeader(props: AppHeaderProps) {
             <img src={AppLogo} alt="JFlix logo" />
           </Link>
           <div className="actions">
+            <form></form>
             <button type="button" className="actions-search">
               <SearchIcon />
             </button>

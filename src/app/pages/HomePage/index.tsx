@@ -9,7 +9,7 @@ export function HomePage() {
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
       <div className="" style={{ marginTop: 80 }}>
-        <span>My HomePage</span>
+        <span>My HomePage hehe</span>
       </div>
     </>
   );

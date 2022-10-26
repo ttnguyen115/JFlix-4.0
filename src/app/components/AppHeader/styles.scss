@@ -23,6 +23,7 @@
 
 .container {
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -71,5 +72,29 @@
       width: 20px;
       fill: #2f80ed;
     }
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, sm)) {
+  .container {
+    max-width: map-get($max-width, sm);
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, md)) {
+  .container {
+    max-width: map-get($max-width, md);
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, lg)) {
+  .container {
+    max-width: map-get($max-width, lg);
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, xl)) {
+  .container {
+    max-width: map-get($max-width, xl);
   }
 }
