@@ -2,16 +2,16 @@
  * Container Generator
  */
 
+import inquirer from 'inquirer';
 import { Actions, PlopGeneratorConfig } from 'node-plop';
 import path from 'path';
-import inquirer from 'inquirer';
 
-import { pathExists } from '../utils';
 import { baseGeneratorPath } from '../paths';
+import { pathExists } from '../utils';
 
 inquirer.registerPrompt('directory', require('inquirer-directory'));
 
-export enum SliceProptNames {
+export const enum SliceProptNames {
   'sliceName' = 'sliceName',
   'path' = 'path',
   'wantSaga' = 'wantSaga',

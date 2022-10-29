@@ -8,12 +8,11 @@ exports[`<App /> should render and match the snapshot 1`] = `
   <AppHeader />
   <Switch>
     <Route
-      component={[Function]}
-      exact={true}
+      element={[Function]}
       path="/"
     />
     <Route
-      component={[Function]}
+      element={[Function]}
     />
   </Switch>
   <Memo(l) />
